@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <ul>
+        <li><a href="#">Home</a> |</li>
+        <li><a href="#">Addresses</a> |</li>
+        <li><a href="#">Categories</a> |</li>
+        <li><a href="#">Customers</a> |</li>
+        <li><a href="#">Employees</a> |</li>
+        <li><a href="#">Orders</a> |</li>
+        <li><a href="#">Products</a> |</li>
+        <li><a href="#">Regions</a> |</li>
+        <li><a href="#">Shippers</a> |</li>
+        <li><a href="#">Suppliers</a></li>
+      </ul>
+      <ul>
+        <li><span>Hello Ilda</span> |</li>
+        <li>
+          <form>
+            <button class="py">Logout</button>
+          </form>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>New Employee</h1>
+      <form>
+        <fieldset>
+          <div>
+            <label>Email</label>
+            <input>
+            <span>can't be blank</span>
+          </div>
+          <div>
+            <label>First Name</label>
+            <input>
+            <span>First Name can't be blank</span>
+            <span>First Name is too short (minimum is 2 characters)</span>
+          </div>
+          <div>
+            <label>Last Name </label>
+            <input>
+            <span>can't be blank,is too short (minimum is 2 characters)</span>
+          </div>
+          <label>Reports To</label>
+          <div>
+            <div>
+              <input placeholder="search">
+              <input type="hidden" value="">
+              <span></span>
+            </div>
+            <ul></ul>
+          </div>
+          <div>
+            <label>Address Line 1</label>
+            <input>
+          </div>
+          <div>
+            <label>Address Line 2</label>
+            <input>
+          </div>
+          <div>
+            <label>City</label>
+            <input>
+          </div>
+          <div>
+            <label>Region</label>
+            <input>
+          </div>
+          <div>
+            <label>Postal Code</label>
+            <input>
+          </div>
+          <div>
+            <label>Country</label>
+            <input>
+          </div>
+          <div>
+            <label>Hire Date
+            </label>
+            <input type="date" id="hire_date">
+          </div>
+          <div>
+            <label>Home Phone</label>
+            <input>
+          </div>
+        </fieldset>
+      </form>
+      <button>Create</button> <a href="#">Back</a>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+
+</html>

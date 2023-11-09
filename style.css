@@ -1,0 +1,127 @@
+:root {
+  --bg-color: #2D2D33;
+  --text-color: whitesmoke;
+  --border-color: #3B3D52;
+  --radius: 5px;
+}
+
+/*
+* #1E3323
+* #47594B
+* #1E3323
+* #728C78
+* #75BF86
+* */
+
+/*
+* #2D2D33
+* #3B3D52
+* #1C2EEA
+* #454A85
+* #3B45B8
+* */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  /* text-decoration: none; */
+  /* &:hover { */
+  /*   text-decoration: underline; */
+  /* } */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input, button {
+  /* border-radius: var(--radius); */
+  color: inherit;
+  background-color: inherit;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-color: var(--border-color);
+  
+  /* &[type='submit']:hover, */
+  /* button:hover { */
+  /*   cursor: pointer; */
+  /* } */
+
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+fieldset div {
+  display: flex;
+}
+
+/* Logout */
+/* button.py { */
+/*   border: none; */
+/*   padding: 0; */
+/*   margin: 0; */
+/*   &:hover { */
+/*     cursor: pointer; */
+/*     text-decoration: underline; */
+/*   } */
+/* } */
+
+/* Header */
+header {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+ul {
+  display: flex;
+}
+
+
+
+/* li { */
+/*   padding-right: 5px; */
+/* } */
+
+
+/* Order Form */
+
+/* form label { */
+/*   display: block; */
+/* } */
+/**/
+/**/
+/* form input { */
+/*   display: block; */
+/* } */
+/**/
+/* form button { */
+/*   display: block; */
+/*   margin-top: 3px; */
+/**/
+/*   &:hover { */
+/*     cursor: pointer; */
+/*   } */
+/* } */
+/**/
+/* label + span { */
+/*   color: firebrick; */
+/*   display: inline; */
+/* } */
+/**/
+/* span { */
+/*   display: inline; */
+/* } */
+/* span.key { */
+/*   color: grey; */
+/*   font-size: 0.7rem; */
+/* } */
+/**/
