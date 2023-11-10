@@ -13,34 +13,39 @@
 <body>
 
   <main>
-    <div class="spacer"></div>
-    <form>
+    <spacer></spacer>
+    <form action="#">
       <fieldset>
-        <div class="field f">
+        <field>
           <label>Label</label>
-          <span class="d">SF</span>
-          <input class="field b" value="Field value">
-          <span class="e">EF</span>
+          <input-start>SF</input-start>
+          <input placeholder="Field value" required>
+          <input-end>EF</input-end>
           <error class="hidden">Validation</error>
-        </div>
-        <div class="field f">
+        </field>
+        <field>
           <label>Label</label>
-          <span class="d">SF</span>
-          <input class="field b" value="Field value">
-          <span class="e">EF</span>
+          <input value="Field value">
           <error class="hidden">Validation</error>
-        </div>
-        <div class="field f">
+        </field>
+        <field>
           <label>Label</label>
-          <span class="d">SF</span>
-          <input class="field b" value="Field value">
-          <span class="e">EF</span>
+          <input type="date">
           <error class="hidden">Validation</error>
-        </div>
+        </field>
+        <field>
+          <label>Label</label>
+          <input value="Field value">
+          <error class="hidden">Validation</error>
+        </field>
+        <field>
+          <label></label>
+          <button>Submit</button>
+        </field>
       </fieldset>
     </form>
   </main>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
