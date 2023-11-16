@@ -1,0 +1,164 @@
+:root {
+  --bg-color: #2D2D33;
+  --text-color: whitesmoke;
+  --text-color-light: #b1b1b1;
+  --border-color: #3B3D52;
+  --border-radius: 5px;
+  --text-color-light: #b1b1b1;
+}
+
+:root {
+  --auto-grid-min-size: 24rem;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  padding: var(--space-xs);
+  /* padding: var(--space-3xs-2xs); */
+  /* padding: var(--space-2xl-3xl); */
+}
+
+
+/* Main Layout */
+.grid {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+/* Headers */
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: var(--step-2);
+}
+
+h4 {
+  font-size: var(--step-1);
+}
+
+h5 {
+  font-size: var(--step-1);
+}
+
+h6 {
+  font-size: var(--step--2);
+}
+
+p {
+  font-size: var(--step-0);
+}
+
+.wrapper {
+  /* border: 1px solid blue; */
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  grid-gap: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="date"] {
+  color: var(--text-color-light);
+  width: 150px;
+  padding-left: 10px;
+}
+
+.hidden {
+  display: none; 
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input-start {
+  padding-left: 5px;
+  color: var(--text-color-light);
+  align-items: center;
+  font-size: 0.7em;
+  align-self: center;
+  width: 25px;
+  padding-right: 25px;
+}
+
+input-start + input {
+  padding-left: 25px;
+}
+
+input {
+  color: inherit;
+  background-color: inherit;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding-left: 5px;
+  &:not[type="date"] {
+    border-color: red;
+  }
+}
+
+/* Need to shuffle this element to the end and reduce the width */
+input-end {
+  color: var(--text-color-light);
+  text-align: right;
+  align-items: center;
+  font-size: 0.7em;
+  width: 25px;
+  padding-right: 5px;
+  justify-self: end;
+  align-self: center;
+}
+
+field {
+  display: grid;
+}
+
+input-start {
+  grid-column: 1;
+  grid-row: 2;
+} 
+
+input {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+input-end {
+  grid-column: 1;
+  grid-row: 2;
+}

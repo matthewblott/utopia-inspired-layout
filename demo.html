@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid type and space demonstration | Kickstarter | Utopia</title>
+  <link rel="stylesheet" href="/css/demo.css" />
+
+</head>
+
+<body class="">
+
+  <div class="show-space">
+    <input type="checkbox" class="u-hidden" id="show-space"
+      oninput="document.documentElement.style.setProperty('--s-opacity', this.checked ? 0.5 : 0)" />
+    <label for="show-space" class="u-flow">
+      <p>Show space?</p>
+      <div class="show-space__control">
+        <i></i>
+      </div>
+    </label>
+  </div>
+  <script>(() => {
+      setTimeout(() => {
+        const space = document.getElementById('show-space');
+        space.checked = true;
+        space.dispatchEvent(new Event('input'));
+      }, 1500)
+    })();</script>
+
+  <header class="c-header" id="header">
+    <div class="c-header__wrap u-wrap">
+      <div>
+        <a class="c-header__logo c-h c-h--step-4" href="">
+          Utopia.
+        </a>
+
+        <a class="c-navicon" href="#nav" aria-label="Open Navigation">
+          <i></i>
+          <i></i>
+          <i></i>
+        </a>
+
+        <div class="c-header__primary" id="nav">
+          <a class="c-navicon" href="#header" aria-label="Close Navigation">
+            <i></i>
+            <i></i>
+            <i></i>
+          </a>
+
+          <nav class="c-header__corporate" aria-label="Corporate">
+            <ul>
+              <li>
+                <a href="">Link</a>
+              </li>
+              <li>
+                <a href="">Link</a>
+              </li>
+              <li>
+                <a href="">Link</a>
+              </li>
+              <li>
+                <a href="">Link</a>
+              </li>
+              <li>
+                <a href="">Link</a>
+              </li>
+              <li>
+                <a href="">Link</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="c-header__search">
+            <label for="site-search" class="u-hidden">Search</label>
+            <input id="site-search" placeholder="Search" type="search" name="s"
+              class="c-input c-input--alt c-input--with-button" />
+            <button type="button" class="c-button--reset u-blue">
+
+              <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--search">
+                <use xlink:href="/static/svg/sprite.svg#search"></use>
+              </svg>
+
+
+
+            </button>
+          </form>
+
+          </nav>
+        </div>
+      </div>
+  </header>
+
+
+
+
+
+  <div class="c-slat--white">
+    <div class="u-wrap u-pad-top-m-l">
+      <nav>
+
+
+
+
+
+        <a href="/prototype/range" class="c-twi u-link c-twi--left"><span>Parent section</span>
+
+          <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--arrow-left">
+            <use xlink:href="/static/svg/sprite.svg#arrow-left"></use>
+          </svg>
+
+
+        </a>
+
+
+
+
+
+      </nav>
+
+      <div class="o-grid o-grid--of-two-late u-pad-top-l-xl">
+        <div>
+          <h1 class="c-h c-h--page-title">Embracing fluid responsive design</h1>
+          <h2 class="c-h c-h--page-subtitle u-margin-top-s-m">Thinking of type and space in responsive palettes</h2>
+          <div class="o-prose u-margin-top-s-m u-flow--m">
+            <p>Two decades ago, as we embarked on our voyage from the comfortable, predictable shores of print design to
+              the fluid and ever-changing open seas of the World Wide Web, <a
+                href="https://alistapart.com/article/dao/">John Allsopp encouraged</a> the acceptance of “the ebb and
+              flow of things”. Ten years later, <a href="https://alistapart.com/article/responsive-web-design/">Ethan
+                Marcotte coined</a> the term “responsive web design”, kickstarting a seismic shift from fixed-width
+              desktop sites – and their separate mobile counterparts – to single codebases of flexible design.</p>
+            <div>
+
+              <a href="https://utopia.fyi" class="c-twi u-link c-twi--left"><span>Read more about this approach</span>
+
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--file">
+                  <use xlink:href="/static/svg/sprite.svg#file"></use>
+                </svg>
+
+
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="u-flow">
+          <img src="/static/img/slide-1.jpg" alt="Alt" />
+
+          <div class="c-slider">
+            <figure>
+              <img src="/static/img/slide-2.jpg" alt="Alt" />
+            </figure>
+            <figure>
+              <img src="/static/img/slide-3.jpg" alt="Alt" />
+            </figure>
+            <figure>
+              <img src="/static/img/slide-4.jpg" alt="Alt" />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-grid o-grid--of-three u-pad-top-m-3xl">
+
+        <div class="c-usp">
+          <div class="u-flow">
+            <h3 class="c-h c-h--step-3 c-usp__title">Design and develop rapidly</h3>
+            <div class="o-prose">
+              <p>Use a handful of related rules, building the system, not every permutation of its contents at arbitrary
+                breakpoints.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="c-usp">
+          <div class="u-flow">
+            <h3 class="c-h c-h--step-3 c-usp__title">Create bespoke constraints</h3>
+            <div class="o-prose">
+              <p>Ensure consistent and harmonious designs.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="c-usp">
+          <div class="u-flow">
+            <h3 class="c-h c-h--step-3 c-usp__title">Streamline communication</h3>
+            <div class="o-prose">
+              <p>Improve communication and collaboration between design and development</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <hr class="u-hr" />
+    </div>
+
+    <div class="u-wrap o-grid o-grid--layout o-grid--3/8 o-grid--pull u-pad-bottom-l">
+      <aside>
+
+        <ol class="c-scroll-spy u-flow--xs ">
+
+          <li><a href="#the-promise">The promise of Utopia</a></li>
+
+          <li><a href="#fluid-type-scales">Fluid type scales</a></li>
+
+        </ol>
+
+
+
+      </aside>
+
+      <main class="u-flow--lined">
+
+        <div class="o-prose u-flow--prose" id="the-promise">
+          <h2>The promise of Utopia</h2>
+          <p>One way to ensure our designs feel at home on more devices is to add more breakpoints, enabling more
+            nuanced design tweaks at more screen sizes. This comes with the cost of a more laborious design process,
+            more mockup generation, more code, and more documentation.</p>
+          <p>Another way is to lean into the fluidity of the medium, recognising this perceived limitation as the
+            advantage it truly is. Instead of tightening our grip by loading up on breakpoints, we can let go,
+            relinquishing some of that control and allowing the medium to share the load. We can embrace the ebb and
+            flow with a more fluid and systematic approach to our design foundations.</p>
+
+          <ul>
+            <li>
+              <h4>Design and develop rapidly</h4>
+              Use a handful of related rules, building the system, not every permutation of its contents at arbitrary
+              breakpoints.
+            </li>
+            <li>
+              <h4>Create bespoke constraints for your projects</h4>
+              Ensure consistent and harmonious designs with streamlined communication and collaboration between design
+              and development.
+            </li>
+            <li>
+              <h4>Visualise the invisible</h4>
+              Componentise responsive space, codifying its implementation and behaviour.
+            </li>
+            <li>
+              <h4>Swap jarring breakpoint jumps for buttery-smooth interpolation</h4>
+              Programmatically tailored type and space scales for every screen size.
+            </li>
+          </ul>
+
+          <blockquote>
+            <p>Thinking this way encourages the curation of a system small enough to be held in short-term memory,
+              rather than one so sprawling it must be constantly referred to.</p>
+            <cite><strong>James G</strong> – Digital Designer</cite>
+          </blockquote>
+        </div>
+
+        <div class="o-prose u-flow--prose">
+          <h2 id="specifications">Fluid type scales</h2>
+          <h3>An example</h3>
+          <table class="c-table c-table--fixed">
+            <thead>
+
+              <tr>
+
+                <th>Scale step</th>
+
+                <th>@min (320px)</th>
+
+                <th>@max (1140px)</th>
+
+              </tr>
+
+            </thead>
+            <tbody>
+
+              <tr>
+
+
+                <th>5</th>
+
+
+
+                <td>52.25</td>
+
+
+
+                <td>73.24</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>4</th>
+
+
+
+                <td>43.55</td>
+
+
+
+                <td>58.59</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>3</th>
+
+
+
+                <td>36.29</td>
+
+
+
+                <td>46.88</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>2</th>
+
+
+
+                <td>30.24</td>
+
+
+
+                <td>37.50</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>1</th>
+
+
+
+                <td>25.20</td>
+
+
+
+                <td>30.00</td>
+
+
+              </tr>
+
+
+              <tr class="highlight">
+
+
+                <th>0</th>
+
+
+
+                <td>21.00</td>
+
+
+
+                <td>24.00</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>-1</th>
+
+
+
+                <td>17.50</td>
+
+
+
+                <td>19.20</td>
+
+
+              </tr>
+
+
+              <tr>
+
+
+                <th>-2</th>
+
+
+
+                <td>14.58</td>
+
+
+
+                <td>15.36</td>
+
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </main>
+    </div>
+
+
+
+    <aside class="c-slat c-slat--blue c-slat--padded">
+      <div class="u-wrap u-flow--xl">
+        <h2 class="c-h c-h--step-3">Related resources</h2>
+        <div class="o-grid o-grid--of-three">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <article class="mp c-card c-card--layout-single c-card--size-medium c-card--has-tag c-card--has-image">
+
+            <span class="c-card__tag">John Allsopp</span>
+
+
+            <div class="c-card__wrapper">
+
+              <figure class="c-card__image">
+                <a href="https://alistapart.com/article/dao/">
+                  <img src="/static/img/slide-1.jpg" alt="" />
+                </a>
+              </figure>
+
+
+              <div class="c-card__primary">
+
+
+                <header class="c-card__header u-flow--2xs">
+
+
+
+
+                  <h2 class="c-h c-card__title"><a href="https://alistapart.com/article/dao/">A Dao of Web Design</a>
+                  </h2>
+
+                </header>
+
+
+
+                <div class="c-card__content u-flow">
+
+
+
+
+
+
+
+
+
+                  <div class="o-prose u-flow--prose u-step--1">
+                    <p>John Allsopp looks at web design through the prism of the Tao Te Ching, and decides that
+                      designers should let the web be the web.</p>
+                  </div>
+
+
+
+
+
+
+                </div>
+
+
+
+              </div>
+
+
+              <a class="c-card__full-link u-fill u-fill--link" href="https://alistapart.com/article/dao/">A Dao of Web
+                Design</a>
+
+            </div>
+
+
+
+
+          </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <article class="mp c-card c-card--layout-single c-card--size-medium c-card--has-tag c-card--has-image">
+
+            <span class="c-card__tag">Ethan Marcotte</span>
+
+
+            <div class="c-card__wrapper">
+
+              <figure class="c-card__image">
+                <a href="https://alistapart.com/article/responsive-web-design/">
+                  <img src="/static/img/slide-2.jpg" alt="" />
+                </a>
+              </figure>
+
+
+              <div class="c-card__primary">
+
+
+                <header class="c-card__header u-flow--2xs">
+
+
+
+
+                  <h2 class="c-h c-card__title"><a
+                      href="https://alistapart.com/article/responsive-web-design/">Responsive Web Design</a></h2>
+
+                </header>
+
+
+
+                <div class="c-card__content u-flow">
+
+
+
+
+
+
+
+
+
+                  <div class="o-prose u-flow--prose u-step--1">
+                    <p>Ethan Marcotte advocates we shift our design thinking to appropriate constraints. He shows us how
+                      to embrace the “ebb and flow of things” with responsive web design.</p>
+                  </div>
+
+
+
+
+
+
+                </div>
+
+
+
+              </div>
+
+
+              <a class="c-card__full-link u-fill u-fill--link"
+                href="https://alistapart.com/article/responsive-web-design/">Responsive Web Design</a>
+
+            </div>
+
+
+
+
+          </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <article class="mp c-card c-card--layout-single c-card--size-medium c-card--has-tag c-card--has-image">
+
+            <span class="c-card__tag">Tim Brown</span>
+
+
+            <div class="c-card__wrapper">
+
+              <figure class="c-card__image">
+                <a href="https://www.modularscale.com/">
+                  <img src="/static/img/slide-3.jpg" alt="" />
+                </a>
+              </figure>
+
+
+              <div class="c-card__primary">
+
+
+                <header class="c-card__header u-flow--2xs">
+
+
+
+
+                  <h2 class="c-h c-card__title"><a href="https://www.modularscale.com/">Modular Scale</a></h2>
+
+                </header>
+
+
+
+                <div class="c-card__content u-flow">
+
+
+
+
+
+
+
+
+
+                  <div class="o-prose u-flow--prose u-step--1">
+                    <p>Calculate, visualize, and learn about modular scales.</p>
+                  </div>
+
+
+
+
+
+
+                </div>
+
+
+
+              </div>
+
+
+              <a class="c-card__full-link u-fill u-fill--link" href="https://www.modularscale.com/">Modular Scale</a>
+
+            </div>
+
+
+
+
+          </article>
+
+
+
+
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+
+
+
+
+  <footer class="c-footer" role="contentinfo">
+    <nav class="c-footer__primary u-wrap" aria-label="Footer">
+      <ul class="c-footer__sections">
+        <li>
+          <h4 class="c-h c-h--step--1 c-footer__subtitle">List heading</h4>
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h4 class="c-h c-h--step--1 c-footer__subtitle">List heading</h4>
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h4 class="c-h c-h--step--1 c-footer__subtitle">List heading</h4>
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </li>
+
+        <li class="u-flex u-flex-column">
+          <ul class="c-footer__social">
+            <li><a href="" aria-label="Facebook">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--facebook">
+                  <use xlink:href="/static/svg/sprite.svg#facebook"></use>
+                </svg>
+
+
+              </a></li>
+            <li><a href="" aria-label="Twitter">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--twitter">
+                  <use xlink:href="/static/svg/sprite.svg#twitter"></use>
+                </svg>
+
+
+              </a></li>
+            <li><a href="" aria-label="Blog">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--rss">
+                  <use xlink:href="/static/svg/sprite.svg#rss"></use>
+                </svg>
+
+
+              </a></li>
+            <li><a href="" aria-label="Instagram">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--instagram">
+                  <use xlink:href="/static/svg/sprite.svg#instagram"></use>
+                </svg>
+
+
+              </a></li>
+            <li><a href="" aria-label="LinkedIn">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--linkedin">
+                  <use xlink:href="/static/svg/sprite.svg#linkedin"></use>
+                </svg>
+
+
+              </a></li>
+            <li><a href="" aria-label="YouTube">
+                <svg role="img" aria-hidden="true" focusable="false" class="c-icon c-icon--youtube">
+                  <use xlink:href="/static/svg/sprite.svg#youtube"></use>
+                </svg>
+
+
+              </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="c-footer__secondary">
+      <div class="u-wrap">
+        <ul class="c-footer__h-links">
+          <li><a href="https://utopia.fyi">Utopia.fyi</a></li>
+        </ul>
+
+        <span>Created by <a href="https://twitter.com/j98">James Gilyead</a> &amp; <a
+            href="https://trysmudford.com">Trys Mudford</a></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="/build/js/app.js"></script>
+  <script>
+    (function () {
+      var links = document.querySelectorAll('a[href=""],a[href="#"]');
+      for (var i = 0; links.length > i; i++) {
+        links[i].addEventListener('click', function (event) {
+          event.preventDefault();
+        })
+      }
+    })();
+  </script>
+</body>
+
+</html>

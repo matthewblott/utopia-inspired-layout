@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('button').addEventListener('click', () => {
-    const form = document.querySelector('form')
-
-    const items = Object.entries(form)
-
-    items.forEach(([key, item]) => {
-      const isValid = item.validity.valid
-      const value = item.value
-
-      if (isValid) {
-        console.log(key, value)
-      }
-      // console.log(key, item)
-    })
+    // const form = document.querySelector('form')
+    //
+    // const items = Object.entries(form)
+    //
+    // items.forEach(([key, item]) => {
+    //   const isValid = item.validity.valid
+    //   const value = item.value
+    //
+    //   if (isValid) {
+    //     console.log(key, value)
+    //   }
+    // })
 
     // const formData = new FormData(form)
     //
