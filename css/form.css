@@ -29,6 +29,28 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.wrapper {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.two-column {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  grid-column: span 2;  
+  /* justify-content: space-between; */
+  justify-self: center;
+  display: flex;
+}
+
+.auto-grid {
+  /* border: 1px solid var(--border-color); */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  grid-gap: 1rem;
+}
 
 a {
   color: inherit;
@@ -72,21 +94,6 @@ h6 {
 p {
   font-size: var(--step-0);
 }
-
-.wrapper {
-  /* border: 1px solid blue; */
-  max-width: 65rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.auto-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
-  grid-gap: 1rem;
-}
-
 input:focus {
   outline: none;
 }
@@ -161,4 +168,24 @@ input {
 input-end {
   grid-column: 1;
   grid-row: 2;
+}
+
+button {
+  width: 150px;
+}
+
+input, button {
+  border-radius: var(--radius);
+  color: inherit;
+  background-color: inherit;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 1px;
+  border-color: var(--border-color);
+  
+  &[type='submit']:hover,
+  button:hover {
+    cursor: pointer;
+  }
+
 }
