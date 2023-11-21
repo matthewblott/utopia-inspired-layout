@@ -52,7 +52,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-  9. Modern default font 
+  9. Sensible defaults for lists
+*/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*
+  10. Modern default font 
 */
 * {
   font-family: sans-serif;

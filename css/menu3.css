@@ -1,0 +1,40 @@
+header {
+  overflow: hidden;
+  display: grid;
+  justify-content: space-between;
+}
+
+label:after {
+  content: "\2261";
+  font-size: 2.4em;
+}
+
+nav {
+  /* float: right; */
+  max-height: 0;
+  width: 100%;
+}
+
+input:checked ~ nav {
+  max-height: 200px;
+}
+
+@media (min-width: 700px) {
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  label { display: none; }
+  
+  nav {
+    width: auto;
+  }
+  
+  li {
+    display: inline-block;
+  }
+
+}
+
