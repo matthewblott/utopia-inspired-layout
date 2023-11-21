@@ -1,7 +1,11 @@
 header {
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content 1fr;
   background-color: lightblue;
+}
+
+nav {
+  background-color: orange;
 }
 
 input {
