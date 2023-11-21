@@ -1,0 +1,39 @@
+header {
+  display: grid;
+  background-color: lightblue;
+}
+
+span {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+nav {
+  display: none;
+}
+
+label {
+  font-size: 2.0rem;
+  line-height: 0.5em;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: right;
+}
+
+label:after {
+  content: "\2261";
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ nav {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+input:checked ~ span {
+  display: none;
+}
