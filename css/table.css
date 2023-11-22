@@ -32,7 +32,7 @@ tr {
   }
   
   td::before {
-    content: attr(data-label);
+    content: attr(title);
   }
 
 }
