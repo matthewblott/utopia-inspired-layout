@@ -8,6 +8,15 @@ table {
   width: 100%;
 }
 
+table{
+  table-layout: fixed;
+}
+
+th, td {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
 tr {
   text-align: left;
 }
