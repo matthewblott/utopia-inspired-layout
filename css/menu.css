@@ -1,7 +1,12 @@
+/*
+  ========
+  CSS Menu
+  ========
+*/
+
 header {
   display: grid;
   grid-template-columns: max-content auto;
-  background-color: lightblue;
 }
 
 input {

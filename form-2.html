@@ -6,64 +6,44 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/utopia.css">
-  <link rel="stylesheet" href="/css/form.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/form-2.css">
+  <style>
+    body {
+      color: var(--text-color);
+      background-color: var(--bg-color);
+    }
+  </style>
   <title>Home</title>
 </head>
 
-<body class="wrapper grid">
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Addresses</a>
-        </li>
-        <li>
-
-          <a href="#">Categories</a>
-        </li>
-        <li>
-
-          <a href="#">Customers</a>
-        </li>
-      </ul>
-
-    </nav>
-  </header>
-
+<body>
   <main>
     <form>
-      <fieldset class="auto-grid">
+      <fieldset>
         <field>
           <label>Label</label>
           <input-start>SF</input-start>
           <input placeholder="Field value" required>
           <input-end>EF</input-end>
-          <error class="hidden">Validation</error>
+          <error>Validation</error>
         </field>
         <field>
           <label>Label</label>
           <input value="Field value">
-          <error class="hidden">Validation</error>
+          <error>Validation</error>
         </field>
         <field>
           <label>Label</label>
           <input type="date">
-          <error class="hidden">Validation</error>
+          <error>Validation</error>
         </field>
         <field>
           <label>Label</label>
           <input value="Field value">
-          <error class="hidden">Validation</error>
+          <error>Validation</error>
         </field>
-        <!-- <field class="two-column"> -->
-        <!--   <button>Submit</button> -->
-        <!-- </field> -->
-
-
       </fieldset>
 
     </form>
@@ -78,7 +58,6 @@
       <button>Submit 3</button>
       <button>Submit 4</button>
     </controls>
-
 
   </main>
 

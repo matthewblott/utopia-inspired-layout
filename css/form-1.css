@@ -1,39 +1,13 @@
-:root {
-  --bg-color: #2D2D33;
-  --text-color: whitesmoke;
-  --text-color-light: #b1b1b1;
-  --border-color: #3B3D52;
-  --border-radius: 5px;
-}
-
-body {
-  color: var(--text-color);
-  background-color: var(--bg-color);
-
-}
-
-main {
-  display: grid;
-}
+/*
+  ==========
+  CSS Form 1
+  ==========
+*/
 
 spacer {
   display: block;
   height: 50px;
 }
-
-/* input:not(:placeholder-shown):invalid { */
-/*   border: 1px solid red; */
-/* } */
-
-/* div[pseudo="-webkit-datetime-edit-day-field"] { */
-/*   color: red; */
-/* } */
-
-main {
-  display: grid;
-  justify-items: center;;
-}
-
 
 input:focus {
   outline: none;
@@ -180,4 +154,3 @@ error {
   }
 
 }
-
