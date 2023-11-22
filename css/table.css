@@ -1,0 +1,29 @@
+/*
+  =========
+  CSS Table
+  =========
+*/
+
+table {
+  width: 100%;
+}
+
+tr {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  thead {
+    display: none;
+  }
+  
+  td {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  td::before {
+    content: attr(data-label);
+  }
+
+}
