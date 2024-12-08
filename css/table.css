@@ -35,4 +35,10 @@ tr {
     content: attr(title);
   }
 
+
+  td:last-of-type {
+    border-bottom: 1px solid blue;
+  }
+
 }
+
